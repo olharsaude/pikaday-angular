@@ -106,6 +106,15 @@
               config[attr] = value;
               break;
 
+            // Booleans
+
+            case "showTime":
+            case "showSeconds":
+            case "use24hour":
+
+              config[attr] = value == 'true';
+              break;
+
             // Dates
 
             case "minDate":
